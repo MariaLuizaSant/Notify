@@ -8,7 +8,7 @@ body{
                          'imagens imagens imagens'
                          'footer footer footer'
                         'final final final';
-    grid-template-rows: 1vh 91vh 40vh 20vh 20vh 15vh 10vh;
+    grid-template-rows: 1vh 91vh 40vh 20vh 60vh 15vh 10vh;
 }
 header{
     grid-area: header;
@@ -76,12 +76,31 @@ nav img{
 
 .video{
     grid-area: video;
-    background-color: gray;
+    background-color: lightgray;
 }
 
 .imagens{
     grid-area: imagens;
-    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+.pessoas img{
+    width: 40px;
+    height: 40px;
+}
+.texto, .texto2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texto p, .texto2 p{
+    color: gray;
+    margin: 3px;
 }
 
 footer{
