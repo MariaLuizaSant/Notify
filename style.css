@@ -1,3 +1,89 @@
 body{
     margin: 0;
+    display: grid;
+    grid-template-areas: 'header header header'
+                        'nav nav nav'
+                         'editable flat reach'
+                         'video video video'
+                         'imagens imagens imagens'
+                         'footer footer footer';
+    grid-template-rows: 1vh 91vh 40vh 20vh 20vh 10vh;
+}
+header{
+    grid-area: header;
+    background-color: rgb(76, 219, 76);
+}
+.editable, .flat, .reach{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.ic1 {
+    background-color: rgb(32, 179, 32);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+ .editable p, .flat p, .reach p{
+     color: gray;
+     margin: 3px;
+ }
+
+ .editable h3, .flat h3, .reach h3{
+    font-family: 'Open Sans', sans-serif;
+ }
+.editable{
+    grid-area: editable;
+}
+
+.flat{
+    grid-area: flat;
+}
+
+.reach{
+    grid-area: reach;
+}
+nav{
+    grid-area: nav;
+    background-image: url(imagens/banner.png);
+    display: flex;
+    justify-content: space-around;
+
+}
+.Titulo{
+    flex-direction: row;
+
+}
+.Titulo img{
+  width: 10px;
+  height: 10px;
+}
+nav img{
+    width: 500px;
+    height: 500px;
+    padding: 97px;
+}
+
+.video{
+    grid-area: video;
+    background-color: gray;
+}
+
+.imagens{
+    grid-area: imagens;
+    background-color: brown;
+}
+
+footer{
+    grid-area: footer;
+    background-color: gray;
 }
