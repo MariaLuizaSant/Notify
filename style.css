@@ -8,7 +8,7 @@ body{
                          'imagens imagens imagens'
                          'footer footer footer'
                         'final final final';
-    grid-template-rows: 1vh 91vh 40vh 20vh 60vh 15vh 10vh;
+    grid-template-rows: 1vh 91vh 40vh 60vh 60vh 15vh 10vh;
 }
 header{
     grid-area: header;
@@ -57,12 +57,16 @@ nav{
     grid-area: nav;
     background-image: url(imagens/banner.png);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
 }
 .Titulo{
-    flex-direction: row;
+    flex-direction: column;
+    display: flex;
 
+}
+.Titulo h2, .Titulo p{
+    justify-content: flex-start;
 }
 .Titulo img{
   width: 10px;
@@ -77,6 +81,29 @@ nav img{
 .video{
     grid-area: video;
     background-color: lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-family: 'Open Sans', sans-serif;
+}
+.texto-video p{
+
+    font-size: 15px;
+}
+input[type=text]{ 	
+    height: 40px;
+    width: 300px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+}
+input[type=button]{ 	
+    height: 50px;
+    width: 100px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+    background-color: rgb(76, 219, 76);
+    color: white;
 }
 
 .imagens{
@@ -98,9 +125,13 @@ nav img{
     align-items: center;
 }
 
-.texto p, .texto2 p{
+.texto p, .texto2 p, .video p{
     color: gray;
     margin: 3px;
+}
+
+.imagem-video img{
+    border-radius: 10px;
 }
 
 footer{
