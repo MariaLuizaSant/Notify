@@ -6,8 +6,9 @@ body{
                          'editable flat reach'
                          'video video video'
                          'imagens imagens imagens'
-                         'footer footer footer';
-    grid-template-rows: 1vh 91vh 40vh 20vh 20vh 10vh;
+                         'footer footer footer'
+                        'final final final';
+    grid-template-rows: 1vh 91vh 40vh 20vh 20vh 15vh 10vh;
 }
 header{
     grid-area: header;
@@ -85,5 +86,18 @@ nav img{
 
 footer{
     grid-area: footer;
-    background-color: gray;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    text-decoration: none;
+    color: gray;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+.final{
+    grid-area: final;
 }
