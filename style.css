@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    padding:0px;
     display: grid;
     grid-template-areas: 'header header header'
                         'nav nav nav'
@@ -9,6 +10,27 @@ body{
                          'footer footer footer'
                         'final final final';
     grid-template-rows: 1vh 91vh 40vh 60vh 60vh 15vh 10vh;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    margin: 13px;
+    font-weight: normal;
+    font-size: 40pt;
+    margin-left: 280px;
+    margin-top:  150px;
+
+}
+.ponto{
+color: rgb(76, 219, 76);
+}
+p{
+    margin: 5px;
+    color: white;
+    margin-left: 280px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 16px;
 }
 header{
     grid-area: header;
@@ -22,6 +44,7 @@ header{
     padding: 10px;
 
 }
+
 .ic1 {
     background-color: rgb(32, 179, 32);
     border-radius: 50%;
@@ -38,6 +61,7 @@ header{
      color: gray;
      margin: 3px;
  }
+
 
  .editable h3, .flat h3, .reach h3{
     font-family: 'Open Sans', sans-serif;
@@ -69,8 +93,37 @@ nav{
     justify-content: flex-start;
 }
 .Titulo img{
-  width: 10px;
-  height: 10px;
+  width: 30px;
+  height: 30px;
+
+}
+.icnav{
+    padding: 280px;
+    justify-content:center;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.icon1{
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+}
+h1 p .icon1{
+
+}
+.icon1:hover{
+    background-color: rgb(32, 179, 32);
+    color: rgb(32, 179, 32);
+
 }
 nav img{
     width: 500px;
@@ -117,6 +170,15 @@ input[type=button]{
 .pessoas img{
     width: 40px;
     height: 40px;
+}
+
+.texto p{
+    font-family: 'Roboto', sans-serif;
+    color: #dbd7d7;
+    font-size: 15px;
+}
+.texto2 p{
+    font-size: 12px;
 }
 .texto, .texto2{
     display: flex;
